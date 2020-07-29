@@ -1,0 +1,15 @@
+server:
+  port: 8088
+
+spring:
+  servlet:
+    multipart:
+      enabled: true #开启文件上传
+      max-file-size: 500MB
+      max-request-size: 500MB
+
+minio:
+  endpoint: http://192.168.174.130:9000 #Minio服务所在地址
+  bucketName: test-bucket #存储桶名称
+  accessKey: minio #访问的key
+  secretKey: minio123 #访问的秘钥
